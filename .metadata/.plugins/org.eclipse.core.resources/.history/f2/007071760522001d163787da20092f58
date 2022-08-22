@@ -1,0 +1,23 @@
+package com.UserController;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.entity.user;
+
+@RestController
+public class UserController {
+	
+	@GetMapping
+	String getUser()
+	{
+		return "test";
+	}
+	@PostMapping
+	public void postUser(user User)
+	{
+		
+	}
+
+}
